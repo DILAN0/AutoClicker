@@ -69,7 +69,6 @@ sg.theme('DarkAmber')   # Add a touch of color
 # All the stuff inside your window.
 layout = [  [sg.Text('AutoClicker 0.0.5')],
             [sg.Text('Задержка между действиями'), sg.Combo(('0.1','1', '2', '3') ,change_submits = False ) ],
-            [sg.Text('Кол-во кликов (Хуйня, не работает)'), sg.InputCombo(('1','2', '3'))],
             [sg.Text('X'), sg.InputText(key='_LISTBOX_1'),sg.Text('Y'), sg.InputText(key='_LISTBOX_2'),sg.Button('1')],
             [sg.Text('X'), sg.InputText(key='_LISTBOX_3'),sg.Text('Y'), sg.InputText(key='_LISTBOX_4'),sg.Button('2')],
             [sg.Text('X'), sg.InputText(key='_LISTBOX_5'),sg.Text('Y'), sg.InputText(key='_LISTBOX_6'),sg.Button('3')],
