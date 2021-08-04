@@ -3,9 +3,6 @@ import time
 import PySimpleGUI as sg
 import keyboard
 import threading
-from PIL import Image, ImageTk, ImageGrab, ImageEnhance
-import tkinter as tk
-
 
 Dis = False
 
@@ -17,7 +14,6 @@ def MainFuncs():
         time.sleep(b)
         pyautogui.click(x3, y3)
         time.sleep(b)
-
 
 
 def On():
@@ -93,7 +89,6 @@ while True:
         b = float(a)
     break
     sg.WIN_CLOSED()
-
 
 window.close()
 
