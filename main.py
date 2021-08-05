@@ -15,7 +15,6 @@ def MainFuncs():
         pyautogui.click(x3, y3)
         time.sleep(b)
 
-
 def On():
     global Dis
     Dis = False
@@ -44,6 +43,7 @@ def Pos2():
     y2 = y
     window.Element('_LISTBOX_3').Update(value=x)
     window.Element('_LISTBOX_4').Update(value=y)
+
 def Pos3():
     global x3
     global y3
@@ -54,15 +54,13 @@ def Pos3():
     window.Element('_LISTBOX_5').Update(value=x)
     window.Element('_LISTBOX_6').Update(value=y)
 
-
 keyboard.add_hotkey('Ctrl + Q' , lambda: Off())
 keyboard.add_hotkey('Ctrl + S + 1' , lambda:Pos1())
 keyboard.add_hotkey('Ctrl + S + 2' , lambda:Pos2())
 keyboard.add_hotkey('Ctrl + S + 3' , lambda:Pos3())
 
+sg.theme('DarkAmber')
 
-sg.theme('DarkAmber')   # Add a touch of color
-# All the stuff inside your window.
 layout = [  [sg.Text('AutoClicker 0.0.5')],
             [sg.Text('Задержка между действиями'), sg.Combo(('0.1','1', '2', '3') ,change_submits = False ) ],
             [sg.Text('X'), sg.InputText(key='_LISTBOX_1'),sg.Text('Y'), sg.InputText(key='_LISTBOX_2'),sg.Button('1')],
@@ -70,13 +68,11 @@ layout = [  [sg.Text('AutoClicker 0.0.5')],
             [sg.Text('X'), sg.InputText(key='_LISTBOX_5'),sg.Text('Y'), sg.InputText(key='_LISTBOX_6'),sg.Button('3')],
             [sg.Button('Ok'), sg.Button('Start'), sg.Button('Quit') ],
             [sg.Text('Ctrl + Q (Stop)')],
-            [sg.Text('Ctrl + S + X,Y')]]
+            [sg.Text('Ctrl + S + 1,2,3')]]
 
-# Create the Window
 window = sg.Window('AutoClicker', layout)
 
 canvas = sg.Canvas(window)
-
 
 while True:
     event, values = window.read()
@@ -91,4 +87,3 @@ while True:
     sg.WIN_CLOSED()
 
 window.close()
-
