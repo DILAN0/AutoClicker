@@ -15,7 +15,6 @@ def MainFuncs():
         pyautogui.click(x3, y3)
         time.sleep(b)
 
-
 def On():
     global Dis
     Dis = False
@@ -44,6 +43,7 @@ def Pos2():
     y2 = y
     window.Element('_LISTBOX_3').Update(value=x)
     window.Element('_LISTBOX_4').Update(value=y)
+
 def Pos3():
     global x3
     global y3
