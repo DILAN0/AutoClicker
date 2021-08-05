@@ -1,6 +1,6 @@
 # AutoClicker
 
-![image](https://user-images.githubusercontent.com/70542011/128234932-069e0a78-5c06-4f65-84e1-75c5957c7451.png)
+![image](https://user-images.githubusercontent.com/70542011/128299419-4695323e-0d5e-46f4-ab14-2233392c72b9.png)
 
 ## Module
 
