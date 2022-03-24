@@ -59,7 +59,7 @@ keyboard.add_hotkey('Ctrl + S + 1' , lambda:Pos1())
 keyboard.add_hotkey('Ctrl + S + 2' , lambda:Pos2())
 keyboard.add_hotkey('Ctrl + S + 3' , lambda:Pos3())
 
-sg.theme('DarkAmber')
+sg.theme('DarkBlue')
 
 layout = [  [sg.Text('AutoClicker 0.0.5')],
             [sg.Text('Задержка между действиями'), sg.Combo(('0.1','1', '2', '3') ,change_submits = False ) ],
@@ -70,7 +70,7 @@ layout = [  [sg.Text('AutoClicker 0.0.5')],
             [sg.Text('Ctrl + Q (Stop)')],
             [sg.Text('Ctrl + S + 1,2,3')]]
 
-window = sg.Window('AutoClicker', layout)
+window = sg.Window('AutoClicker',layout,grab_anywhere=False,use_custom_titlebar = True)
 
 canvas = sg.Canvas(window)
 
